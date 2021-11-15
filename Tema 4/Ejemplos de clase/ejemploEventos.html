@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pruebitas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+        <h3 onclick="cambiar(this)" onmouseover="colorcito(this)" onmouseout="adiosColor(this)" >Pinchame y mira que hago ;-)</h3>
+        <br>
+        <a href="http://www.ies-mardecadiz.com/" onclick="return preguntita();">Vamos a la pagina del Mar de Cádiz</a>
+        <script>
+        function cambiar(elem)
+        {
+            elem.innerHTML = "Hola buenas Yil :-)"
+        }
+        function colorcito(elem)
+        {
+            elem.style.background='pink'
+        }
+        function adiosColor(elem)
+        {
+            elem.style.background='white'
+        }
+
+        function preguntita()
+        {
+            return confirm("¿De verdad quieres entrar en esa pagina tan fea?");
+        }
+
+        </script>
+        
+
+
+    </body>
+</html>
